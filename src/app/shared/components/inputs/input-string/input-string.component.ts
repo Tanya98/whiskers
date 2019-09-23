@@ -29,8 +29,8 @@ export class InputStringComponent implements OnInit {
   @Input()
   public type: string;
 
-  @Input()
-  public formControlName: FormControlName;
+  // @Input()
+  // public formControlName: FormControlName;
 
   ngOnInit() {
   }
