@@ -1,3 +1,33 @@
-<form class="registration-form">
+<form class="registration-form" ngForm="signInForm">
+  <div class="logo-container">
+    <img class="logo" src="../../../assets/images/logo.png" alt="logo">
+  </div>
+  <div class="wrapper">
 
+    <app-input-string
+      [type]="configuration.Account.Name.type"
+      [name]="configuration.Account.Name.formName"
+      [isRequired]="configuration.Account.Name.isRequired"
+      [placeholder]="localization.yourName"
+      [minLength]="configuration.Account.Name.minLength"
+      [maxLength]="configuration.Account.Name.maxLength"
+      formControlName="name"
+    >
+    </app-input-string>
+
+    <app-input-string
+      [type]="configuration.Account.Password.type"
+      [name]="configuration.Account.Name.formName"
+      [isRequired]="configuration.Account.Name.isRequired"
+      [placeholder]="localization.yourPassword"
+      [minLength]="configuration.Account.Name.minLength"
+      [maxLength]="configuration.Account.Name.maxLength"
+      [formControlName]=""
+    >
+    </app-input-string>
+
+    <div class="block-buttons">
+      <app-blue-button [text]="localization.submit_button"></app-blue-button>
+    </div>
+  </div>
 </form>
