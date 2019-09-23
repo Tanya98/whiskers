@@ -1,0 +1,19 @@
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 330px;
+  background: white;
+  border-radius: 5px;
+
+  .logo-container {
+    margin: 20px auto;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
