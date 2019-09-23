@@ -1,0 +1,11 @@
+input {
+  padding: 13px 17px;
+  border-radius: 8px;
+  color: rgb(103, 105, 111);
+  border: 1px solid #ebebeb;
+  margin: 15px 0px;
+
+  &:focus {
+    outline: 1px solid black;
+  }
+}
