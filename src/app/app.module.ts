@@ -7,6 +7,7 @@ import {HTTP_INTERCEPTORS} from '@angular/common/http';
 import {TokenInterceptor} from './shared/http/interceptors/token-interceptor';
 import {AccountModule} from './account/account.module';
 import {AuthMasterComponent} from './account/auth-master/auth-master.component';
+import {SharedModule} from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {AuthMasterComponent} from './account/auth-master/auth-master.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AccountModule
+    AccountModule,
+    SharedModule
   ],
   providers: [
     {
